@@ -142,6 +142,10 @@ style: |
 
 *AccsoCON 2026*
 
+<br>
+
+*"Show of hands — Java devs? AWS people? Spring Boot in production?"*
+
 <!-- 
 SPEAKER: Neil
 
@@ -193,7 +197,7 @@ Microsoft-shaped from the 90s. Embedded in banking, government, education.
 
 <br>
 
-> Not wrong vs right. Just different.
+> Not wrong vs right. Just different starting points, different infrastructure histories.
 
 <!--
 SPEAKER: Zachary
@@ -223,6 +227,10 @@ South Africa's enterprise tech market was shaped by Microsoft from the 1990s onw
 
 📊 C# — **top 5** most-used languages globally *(Stack Overflow 2025)*
 
+<br>
+
+*Key point: 2019 data centres = SA enterprises keep data on African soil → regulatory compliance for banking & healthcare*
+
 <!--
 SPEAKER: Zachary
 
@@ -249,7 +257,8 @@ The Stack Overflow stat is worth dwelling on — C# in the top 5 globally, year 
 
 <br>
 
-> Not a coincidence. A deliberate choice.
+> Not a coincidence. A deliberate choice — by the clients, and by Accso.
+> These projects chose .NET because it fit the requirements.
 
 <!--
 SPEAKER: Zachary
@@ -258,7 +267,7 @@ SPEAKER: Zachary
 
 Pause after dropping ZDF, BAFA, and DSO. Let the German audience connect the dots themselves. These are not obscure clients — everyone in the room knows what ZDF is. The point lands harder in silence than with explanation.
 
-"That's not a coincidence. That's a deliberate choice — by the clients, and by Accso. The stack works. The skills are there. And the team in South Africa delivers."
+"That's not a coincidence. That's a deliberate choice — by the clients, and by Accso. The stack fit the requirements, and the team in South Africa had the skills."
 -->
 
 ---
@@ -273,14 +282,18 @@ Certified expertise. Demonstrated delivery. Formal relationship with Microsoft.
 
 <br>
 
-> Not just users of the stack — recognised practitioners of it.
+*Not just a sticker for buying licences — requires certified expertise and demonstrated delivery.*
+
+<br>
+
+> We take this seriously — it shapes how we approach the work.
 
 <!--
 SPEAKER: Zachary
 
-"And it's worth saying explicitly — Accso is a Microsoft Gold Partner. That's not a sticker you get for buying a few licences. It means certified expertise, demonstrated delivery, and a formal relationship with Microsoft. We're not just users of this stack — we're recognised practitioners of it."
+"And it's worth saying explicitly — Accso is a Microsoft Gold Partner. That's not a sticker you get for buying a few licences. It means certified expertise, demonstrated delivery, and a formal relationship with Microsoft."
 
-This is a good moment to let that land before handing back to Neil. It reframes everything that follows — the client work, the community involvement, the AI integration — as coming from a position of genuine expertise, not enthusiasm.
+This is a good moment to let that land before handing back to Neil.
 
 Hand over to Neil.
 -->
@@ -316,6 +329,10 @@ Your .NET skills. Your existing tooling. Your browser.
 
 **No JavaScript. No npm. No webpack config.**
 
+<br>
+
+*Write Blazor components in C# + Razor (HTML mixed with C# logic). Runs on server OR in browser via WebAssembly. Looks like any modern web app.*
+
 <!--
 SPEAKER: Neil
 
@@ -349,6 +366,8 @@ Blazor is Microsoft's framework for building interactive web applications using 
 
 Interactive UI. State management. **No JavaScript. No npm.**
 
+*Let the audience read it — it's short on purpose. 10 lines. Fully interactive component.*
+
 <!--
 SPEAKER: Neil
 
@@ -377,7 +396,7 @@ Just .NET developers building in the language they already knew.
 
 <br>
 
-> Not a tutorial. Not a demo. A tool people actually use.
+> Not a tutorial. Not a demo. A tool that gets used in practice.
 
 <!--
 SPEAKER: Neil
@@ -405,6 +424,10 @@ The JavaScript ecosystem is loud. Blazor is quiet.
 
 <br>
 
+*The early criticism WAS valid: slow load, heavy WASM, limited ecosystem. But three major releases later, those issues are fixed. People citing problems haven't checked since 2020.*
+
+<br>
+
 > Blazor's reputation is being judged on a version that's three major releases old. That's like saying electric cars are bad because you drove one in 2012.
 
 <!--
@@ -429,6 +452,10 @@ The agent doesn't care what language it writes.
 
 **NuGet:** curated, governed, Microsoft-maintained at the platform level.
 
+<br>
+
+*"When your AI agent writes C# and Blazor, the dependency tree is predictable. With 400 transitive npm dependencies, that's harder to guarantee."*
+
 <!--
 SPEAKER: Neil
 
@@ -440,7 +467,7 @@ Consider what happens when an AI agent scaffolds a React frontend. It pulls in n
 
 With Blazor and NuGet: package management is centralised and governed. Microsoft maintains the core stack. You're not depending on a package last updated in 2019 by someone who's moved on. The .NET runtime handles security patching at the platform level — not package by package.
 
-"When your AI agent writes C# and Blazor, you know what you're getting. When it writes a React app with 400 transitive npm dependencies — good luck with that audit."
+"When your AI agent writes C# and Blazor, the dependency tree is smaller and more predictable. When it writes a React app with 400 transitive npm dependencies — that's a harder thing to audit."
 -->
 
 ---
@@ -455,6 +482,10 @@ With Blazor and NuGet: package management is centralised and governed. Microsoft
 | **Blazor WebAssembly** | Runs in browser via WASM | Offline-capable apps |
 | **Blazor SSR** | Server-side rendered HTML | SEO, fast first load |
 | **Auto** | SSR first, then WASM | Best of both worlds |
+
+<br>
+
+*Auto mode = fast first load from SSR, silently switches to client-side WASM once cached. User never notices.*
 
 <!--
 SPEAKER: Neil
@@ -482,14 +513,18 @@ You don't need to go deep on all four modes. The point is to show that the frame
 
 <br>
 
-> The question isn't "is Blazor better than React?" The question is: where do you want your AI-generated UI code to land?
+*If you have a pure JS team with deep expertise, don't force it. React still wins on component ecosystem size.*
+
+<br>
+
+> The question isn't "is Blazor better than React?" — it's about which ecosystem gives you more confidence when AI is generating the code.
 
 <!--
 SPEAKER: Neil
 
 Be honest here — Blazor is not for everyone. If you have a pure front-end team with deep JavaScript expertise, don't force it. If you need a massive component ecosystem right now, React wins on sheer library volume.
 
-"The question isn't 'is Blazor better than React?' The question is: in an agentic coding world where AI is writing your UI, which ecosystem do you want that code landing in? A strongly-typed, centrally governed one — or 400 npm packages and a prayer?"
+"The question isn't 'is Blazor better than React?' The question is: in an agentic coding world where AI is writing your UI, which ecosystem gives you more confidence about what ends up in production?"
 
 Hand over to Zachary.
 -->
@@ -523,6 +558,10 @@ The good news: the **.NET AI ecosystem doesn't care which model you use.**
 
 Write once. Swap the model in one line.
 
+<br>
+
+*"I'm not giving you the marketing version. Here's what we actually reach for day to day."*
+
 <!--
 SPEAKER: Zachary
 
@@ -548,6 +587,10 @@ var response = await client.CompleteAsync(
 ```
 
 One interface. Any model. Same application code.
+
+*To switch models — GPT-4, Mistral, local Ollama — change ONE line. App code, tests, deployment all stay the same.*
+
+*Out of the box: logging, OpenTelemetry, retry/rate limiting (Polly), semantic caching. These are .NET features that now apply to AI.*
 
 <!--
 SPEAKER: Zachary
@@ -575,6 +618,10 @@ The agent writes C# into a typed, compiled ecosystem. **Errors at compile time. 
 
 <br>
 
+*This connects back to the Blazor argument: the agent is writing code INTO your codebase. Type safety + compile-time guarantees = you can trust what it produces.*
+
+<br>
+
 📅 GitHub Copilot Dev Days Cape Town 2026 — **110 attendees**
 
 📅 GitHub Copilot Global Bootcamp — **63 attendees on a Saturday morning**
@@ -586,7 +633,7 @@ SPEAKER: Zachary
 
 The Copilot Agents point is worth emphasising — this is where the agentic coding argument from Section 2 connects back. The agent is writing code. It's writing it into your codebase. The quality of that codebase's ecosystem — its type safety, its package governance, its compile-time guarantees — determines how much you can trust what the agent produces.
 
-"110 people on a Saturday to learn about Copilot. That's not hype — that's where developer attention actually is."
+"110 people on a Saturday to learn about Copilot. That tells you where developer attention is right now."
 -->
 
 ---
@@ -608,6 +655,10 @@ var result = await kernel.InvokePromptAsync(
 The AI decided to call your code. You didn't tell it to.
 
 **That's an agent.**
+
+*Semantic Kernel = orchestration layer between your app and any LLM. The AI reasoned about available tools and chose the right one.*
+
+*You can build: plugins (wrap any C# method as AI-callable tool), memory/RAG, multi-step agents, Process Framework for stateful workflows in regulated industries.*
 
 <!--
 SPEAKER: Zachary
@@ -641,6 +692,8 @@ The AI answers from your actual content. Not from its training data.
 
 Replacing internal wikis, policy documents, FAQ pages — across SA enterprises today.
 
+*RAG = Retrieval Augmented Generation. Feed the model YOUR content at query time. Answers are grounded in what you wrote, not what the model guessed.*
+
 <!--
 SPEAKER: Zachary
 
@@ -667,12 +720,14 @@ Built entirely in C#. No JavaScript. No separate frontend team.
 
 **One language. One codebase. One deployment.**
 
+*The combo: Blazor (UI) + SignalR (real-time WebSocket) + Microsoft.Extensions.AI (LLM call). Worth trying if you haven't yet.*
+
 <!--
 SPEAKER: Zachary
 
 "That's a streaming AI interface — the same typing effect you see in Claude or ChatGPT — built entirely in C#. No JavaScript. No separate frontend team. One language, one codebase, one deployment pipeline."
 
-This combination — Blazor for the UI, SignalR for the real-time WebSocket, and Microsoft.Extensions.AI or Semantic Kernel for the LLM call — is genuinely powerful and underappreciated. Most people haven't tried it yet. The ones who have tend not to go back.
+This combination — Blazor for the UI, SignalR for the real-time WebSocket, and Microsoft.Extensions.AI or Semantic Kernel for the LLM call — works well together. Worth trying if you haven't yet.
 -->
 
 ---
@@ -693,14 +748,18 @@ On the same platform your team has been building on for years.
 
 <br>
 
-> That's not legacy. That's an advantage.
+*The .NET stack answers all three: responsibility, security, existing skills. If your team already knows it, that's a real head start.*
+
+<br>
+
+> That's not legacy. That's continuity.
 
 <!--
 SPEAKER: Zachary
 
 "The AI conversation in South Africa — and honestly everywhere — is no longer 'should we use AI?' It's 'how do we use it responsibly, securely, and with the skills we already have?'"
 
-"The .NET stack answers all three. Model-agnostic abstractions. Enterprise-grade observability. Strongly-typed, auditable code. And it runs on the same platform your team has been building on for years. That's not legacy — that's an advantage."
+"The .NET stack answers all three. Model-agnostic abstractions. Enterprise-grade observability. Strongly-typed, auditable code. And it runs on the same platform your team has been building on for years. If that's your starting point, you're in a good position."
 
 Hand over to Neil.
 -->
@@ -742,12 +801,16 @@ Take the stage back from Zachary.
 
 📆 **12+ years** running
 
+<br>
+
+*"Something I'm genuinely proud to be part of — our community."*
+
 <!--
 SPEAKER: Neil
 
-"Let me tell you about something I'm actually more proud of than any framework or AI pipeline. Let me tell you about our community."
+"Let me tell you about something I'm genuinely proud to be part of. Our community."
 
-"2,124 members. 12 years. In Cape Town. For a Microsoft developer community. I'll let that speak for itself."
+"2,124 members. 12 years. In Cape Town. For a Microsoft developer community."
 -->
 
 ---
@@ -766,6 +829,10 @@ SPEAKER: Neil
 | Mastering Prompt Engineering + Hybrid Apps | **93** |
 | .NET Conf 2025 Cape Town | 🏆 **SOLD OUT — biggest ever in SA** |
 | Tonight at the Accso office | **83 registered** |
+
+*".NET Conf 2025 Cape Town = biggest .NET Conf in the history of South Africa, any city."*
+
+*"And 83 people are at our office in Cape Town TONIGHT. While we're standing here."*
 
 <!--
 SPEAKER: Neil
@@ -791,7 +858,7 @@ The flagship annual .NET community conference. On the African continent.
 
 <br>
 
-> From monthly meetups in our office to a continental conference.
+> From monthly meetups in our office to helping host a continental conference.
 
 <!--
 SPEAKER: Neil
@@ -823,14 +890,14 @@ Tonight — **83 registered**
 
 <br>
 
-> Developers walk into an Accso office and leave knowing who we are.
+> Developers walk into an Accso office — and that builds a relationship over time.
 
 <!--
 SPEAKER: Neil
 
 "Here's what's directly relevant to everyone in this room."
 
-"That's not a marketing campaign. That's a relationship built by showing up, consistently, for years."
+"That's not a marketing campaign. That's a relationship built by showing up consistently."
 
 The numbers tell the story here — don't over-explain. Let the audience do the maths on what it means to have 57, 61, 83 developers walking through your office door regularly.
 -->
@@ -847,14 +914,22 @@ The numbers tell the story here — don't over-explain. Let the audience do the 
 
 **For Accso** — 2,124 potential future colleagues. A brand that means something in the local talent pool. A direct connection to .NET Conf Africa.
 
+<br>
+
+*Richard Campbell = host of .NET Rocks, one of the longest-running dev podcasts. He came to CT.*
+
+*Matthew Leibowitz = Principal Engineer at Microsoft, SkiaSharp maintainer. He co-runs our meetups.*
+
+*"100 people on a Wednesday evening after work because they're genuinely interested. That's a healthy community."*
+
 <!--
 SPEAKER: Neil
 
-Richard Campbell is the host of .NET Rocks — one of the longest-running developer podcasts in the world. He came to Cape Town. That's the calibre the community operates at.
+Richard Campbell is the host of .NET Rocks — one of the longest-running developer podcasts in the world. He came to Cape Town because of the community here.
 
-Matthew Leibowitz is a Principal Software Engineer at Microsoft and maintainer of SkiaSharp. He helps run our meetups. Microsoft's own engineers are co-organising our events.
+Matthew Leibowitz is a Principal Software Engineer at Microsoft and maintainer of SkiaSharp. He helps run our meetups.
 
-"This isn't a community that exists on paper. It shows up. 100 people on a Wednesday evening, after work, because they're genuinely excited about what they're building. That's the culture .NET has in Cape Town. And we get to be part of it."
+"This isn't a community that exists on paper. It shows up. 100 people on a Wednesday evening, after work, because they're interested in what they're building. We're glad to be part of it."
 
 Hand over to both for the close.
 -->
@@ -883,27 +958,27 @@ Both Neil and Zachary on stage together.
 **1️⃣ Microsoft's investment in SA is real and deliberate**
 Data centres, Gold Partner ecosystem, enterprise partnerships. An active bet on the African continent.
 
-**2️⃣ Blazor is the right choice for the agentic coding era**
-When AI agents write your UI, you want it landing in a stable, governed ecosystem. Not 400 npm packages and a vulnerability audit.
+**2️⃣ Blazor is worth considering for the agentic coding era**
+When AI agents write your UI, a stable, governed ecosystem reduces supply-chain risk.
 
 **3️⃣ Integrating AI into .NET is genuinely straightforward**
-Microsoft.Extensions.AI. Semantic Kernel. GitHub Copilot. The stack you already know.
+Microsoft.Extensions.AI. Semantic Kernel. GitHub Copilot. The stack you already know. No Python. No new paradigm.
 
 **4️⃣ Community is the multiplier**
-2,124 members. 150+ events. 12 years. .NET Conf Africa. Accso right in the middle of it.
+2,124 members. 150+ events. 12 years. .NET Conf Africa. We're glad to be part of it.
 
 <!--
 SPEAKER: Both
 
 Take one point each, alternate naturally.
 
-1 — Data centres, Gold Partner ecosystem, enterprise partnerships. This isn't legacy lock-in. It's an active bet on the African continent that's paying off.
+1 — Data centres, Gold Partner ecosystem, enterprise partnerships. This isn't legacy lock-in. It's ongoing investment in the African continent.
 
-2 — Not because it's trendy. Because when AI agents write your UI code, you want it landing in a strongly-typed, centrally governed ecosystem. Not 400 npm packages and a vulnerability audit.
+2 — Not because it's trendy. Because when AI agents write your UI code, a strongly-typed, centrally governed ecosystem reduces the risk of what ends up in production.
 
-3 — Microsoft.Extensions.AI gives you a model-agnostic abstraction. Semantic Kernel gives you agents, memory, and plugins in C#. GitHub Copilot writes the code. You don't need to learn Python. You don't need a new paradigm. You need the stack you already know.
+3 — Microsoft.Extensions.AI gives you a model-agnostic abstraction. Semantic Kernel gives you agents, memory, and plugins in C#. GitHub Copilot writes the code. You don't need to learn Python. You don't need a new paradigm.
 
-4 — 2,124 members. 150+ events. 12 years. .NET Conf Africa coming to Cape Town. Accso right in the middle of it. That's an ecosystem — and it's alive.
+4 — 2,124 members. 150+ events. 12 years. .NET Conf Africa coming to Cape Town. We're glad to be part of it.
 -->
 
 ---
@@ -914,8 +989,12 @@ Take one point each, alternate naturally.
 
 *We'll let you decide.*
 
-*But from where we're standing —*
-*it looks pretty good from here.*
+*From our experience —*
+*there's a lot to work with here.*
+
+<br>
+
+*"They're not just relevant. For many developers, they're the platform on which AI-powered applications are being built today. By real teams. For real clients. Including some you'll recognise."*
 
 <br>
 
@@ -928,11 +1007,11 @@ SPEAKER: Neil closes:
 
 "So — thank you for staying. You didn't have to. The door was right there the whole time."
 
-"And next time someone asks whether Microsoft and .NET are still relevant in South Africa — the answer is: they're not just relevant. For many developers, they're the foundation on which the next generation of AI-powered applications is being built. By real teams. For real clients. Including some you definitely know."
+"And next time someone asks whether Microsoft and .NET are still relevant in South Africa — from what we've seen, they're the platform on which AI-powered applications are being built today. By real teams. For real clients. Including some you'll recognise."
 
 Both together on the final line:
 
-"Still relevant? We'll let you decide. But from where we're standing — it looks pretty good from here."
+"Still relevant? We'll let you decide. But from our experience — there's a lot to work with here."
 -->
 
 ---
@@ -948,6 +1027,10 @@ Both together on the final line:
 📍 **meetup.com/cape-town-ms-dev-user-group**
 
 ✉️ **usergroup@cptmsdug.dev**
+
+<br>
+
+*Common Qs: "Why not Python for AI?" → Python=training, .NET=enterprise apps, swap model in 1 line. "Is Blazor in production?" → SA finance, healthcare, govt, ZDF. "How to join?" → meetup link, free, open to all.*
 
 <!--
 SPEAKER: Both
