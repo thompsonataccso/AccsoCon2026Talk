@@ -144,7 +144,6 @@ style: |
 
 <br>
 
-*"Show of hands — Java devs? AWS people? Spring Boot in production?"*
 
 <!-- 
 SPEAKER: Neil
